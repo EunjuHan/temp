@@ -1,0 +1,83 @@
+
+{
+  "Manufacturer": "Samsung",
+  "Model": "Galaxy7",
+  "DateReleased": "2016-3-11T00:00:00",
+  "ScreenSize": 5.5,
+  "MSRP": 999
+}
+
+{
+  "Manufacturer": "Apple",
+  "Model": "iPhone 7",
+  "DateReleased": "2016-9-06T00:00:00",
+  "ScreenSize": 5.5,
+  "MSRP": 849
+}
+
+{
+  "Manufacturer": "Apple",
+  "Model": "iPhone 6",
+  "DateReleased": "2014-9-19T00:00:00",
+  "ScreenSize": 4.7,
+  "MSRP": 859
+}
+
+<Register>
+POST
+/api/account/register
+Content-Type: application/x-www-form-urlencoded
+Email=eunju.han1%40gmail.com&Password=Password123!&ConfirmPassword=Password123!&Roles=Employee&Roles=ProductManagement
+
+
+Email=ejhan4%40myseneca.ca&Password=Password123!&ConfirmPassword=Password123!&Roles=Employee&Roles=Sales
+
+
+Email=eunju.han%40gmail.com&Password=Password123!&ConfirmPassword=Password123!&Roles=Employee&Roles=Sales&Activities=SmartphoneEditor
+
+
+
+grant_type=password&username=eunju.han%40gmail.com&password=Password123!
+
+Authorization: Bearer eUV20xxVDQcT6kniCGaE_CbZJI-SN1ujSdgpdMBvQsAjYIl93JwD_VMUtd0Tdjvoiz9Av8L2q7KBMwD7snTHW8lpneLBxfzTUBGlKnNejWyKosL5WC4FRY8Sc3LFbyrvHysCh67YDQtZCfffefV_xuqMk6skO_Fbdr5sw1uTNqhWQudy6vdC3j3pEqEq7OxGfG-7sSgW-s4PWyGZD2j0t_UpooTMfzYhyzMSwTL_21yppwiKQZxn_ntyBjCgpG0uaHR5QqoVs0OK6H6ibfTYI0b8G3kOS3qcD0k2NoKcrsXJG66bLBkrC2Qt0hQZLGBDl29F4HjknakU2kuc2EyK5M8S-vHYFkxGgpc61-BO3R4ceW4B5nv4Dg8B7s3uUA9T0XiM0wclCM2RieWTylBeTD0eyZKh8gdU9OWkxlDQNhkUlhM8RKlyrXkOOkHvZEUBKA6GaJh3i2sWWeVreHb3TnGWgVU0s78LoLSDFWwMIys8R_0rr1-miB5AM2JhOg0y8YtVL0gnjumKWToN2NlwvZKyrPTIiOcLoTrRpsLJIVudk3yiCSCiMz9zR5Rzx05
+
+
+<Login>
+POST 
+/token
+Content-Type: application/x-www-form-urlencoded
+grant_type=password&username=eunju.han1%40gmail.com&password=Password123!
+
+Authorization: Bearer exen9mpFbTPbkalSBTVXKA5-pnWNCfAMFiNUBd-dSkl_t9_yyMeePKIIpcjVhut4vmDSMy0ABlezbWRAwzc7q-pIlM6H-4RSfQQG2FjxiUHFmHGsQjxhrT5e2Jifh2dy4-Jq-u09YWi-BSDy0Zj-kXQRvzDNUSJIH5DVPd82sjMvoEdlN0ocXPnF8McsvX5kh_5NsOxEuLMicH-utoC67OdeSh_R2Sk2SsTnblMOr2n3c4zLs1c-8HaSpmk6ozA4BCyDsUDiNVkYf6jf-mCfgIWzjJ6eY7cVSAyx3u5Re3ac5ltlz1_n0ZecCZKLCnhHHGnawr4VXgY4SMcd-KVdxyRGER2fpTJwwQECmz5keREDMUM6VPdh2BwoGakNiiM5EiWpEj_XOD4jOjy_uFwofVKJeD4tYQSOXyKxsYYs7ua_yWyef_F5nzzHBocGRdVv9mlzTFqs390QfxFMLzVawCnLJmygD1uCWz0Dj1HQpFaPNPgc0aTvT70ATCQuN3bNZHvZ46vLgmxQRRzIHUr3ocRJCokyM3n90uARMZ5SZUQB70YiiP1WfrvW9RpvvhGFgHk7o1anZljUgiugFMcqJQ
+
+<Log out>
+api/Account/Logout
+Content-Type: application/x-www-form-urlencoded
+Email=eunju.han1%40gmail.com&Password=Password123!&ConfirmPassword=Password123!
+
+
+<Remove Account>
+api/Account/RemoveLogin
+
+
+
+<Register>
+POST
+/api/account/register
+Content-Type: application/x-www-form-urlencoded
+Email=admin%40example.com&Password=Password123!&ConfirmPassword=Password123!
+
+<Login>
+POST 
+/token
+Content-Type: application/x-www-form-urlencoded
+grant_type=password&username=student8%40example.com&password=Password123!
+
+
+GET /api/values
+Authorization: Bearer jOzisbysN3PKbBycrX_IkgG3px9Z43TS6Gu2h0yX3cbojcI64MDpQfPM5xspGJEYtzRPTITzaCc_Q9LFn-zYKiACuq_Nt4hIeTLgpgtXtRCHszH0OCqY0FMEsHf4pSSm-MMlAHmzyGM5yzCpy6UM5xpTBevGYg7DYjhOov1j8-0-zfTjhakRdiAIz4DWVwbQzgcpQFd9rJu7TqETfu4yTHU37I0U6dQrSNEVmCoD8q2_CoCvQpPbF8FmwawQ5TdXmTPfapt4eNQuClg680EWVBLHMmv4iD7lNG0BDwRB5KUwgPzEb5rutCGn2rEO0quuGkUFzfxf6SdxQsmK4FNOxJ598epBRr-5p9niUOpXHJgQZz1PxyBldIMif30zDdSu0bGWSmXCJcTrU0gPtUDX3OHh9nqtG-6BVv557A4qAYfE8WbB4U3J_eMjCdUec6DZyZIHjcrUIyAlJmQgWgObGM2TCdDj7bZqJQZUuzG1J71Ca0fgPsuID-7sxJ3qtqu5
+
+GET /api/authinfo
+
+
+
